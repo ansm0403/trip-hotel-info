@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/*" : ["src/*"],
+            "@components/*" : ["src/components/*"]
+            // "@styles/*" : ["src/styles/*"],
+            // "@shared/*" : ["src/components/shared/*"],
+            // "@pages/*" : ["src/pages/*"],
+            // "@model/*" : ["src/model/*"],
+            // "@contexts/*" : ["src/contexts/*"],
+            // "@remote/*" : ["src/remote/*"],
+            // "@constants" : ["src/constants/index.ts"]
+        }
+    }
+}
