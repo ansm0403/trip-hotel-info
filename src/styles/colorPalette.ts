@@ -1,4 +1,4 @@
-mport { css } from '@emotion/react'
+import { css } from '@emotion/react'
 
 export const colorPalette = css`
   :root {
