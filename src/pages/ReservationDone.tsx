@@ -12,7 +12,6 @@ function ReservationDonePage() {
   }) as {
     hotelName: string
   }
-
   const navigate = useNavigate()
 
   return (

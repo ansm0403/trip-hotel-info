@@ -13,6 +13,7 @@ function ReservationPage() {
   const user = useUser()
   const navigate = useNavigate()
 
+  
   const { startDate, endDate, nights, roomId, hotelId } = parse(
     window.location.search,
     { ignoreQueryPrefix: true },

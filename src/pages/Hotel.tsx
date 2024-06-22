@@ -45,5 +45,4 @@ const scrollProgressBarStyles = css`
   top: 64px;
   z-index: 2;
 `
-
 export default HotelPage

@@ -9,7 +9,6 @@ function ReservationListPage() {
   if (data == null || isLoading === true) {
     return null
   }
-
   return (
     <div>
       {data.map(({ hotel, reservation }) => (
