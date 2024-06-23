@@ -7,7 +7,6 @@ interface SpacingProps {
   direction?: 'vertical' | 'horizontal'
   backgroundColor?: Colors
 }
-
 const Spacing = styled.div<SpacingProps>`
   ${({ size, direction = 'vertical' }) =>
     direction === 'vertical'

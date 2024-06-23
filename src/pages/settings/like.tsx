@@ -118,5 +118,4 @@ import {
   
     return <Droppable {...props}>{children}</Droppable>
   }
-  
   export default LikePage

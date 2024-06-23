@@ -37,12 +37,10 @@ import {
         nights: from && to ? differenceInDays(to, from) : 0,
       })
     }
-  
     const selected = {
       from: startDate != null ? parseISO(startDate) : undefined,
       to: endDate != null ? parseISO(endDate) : undefined,
     }
-  
     return (
       <Container>
         <DayPicker

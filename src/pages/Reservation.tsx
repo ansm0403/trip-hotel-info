@@ -24,7 +24,6 @@ function ReservationPage() {
     roomId: string
     hotelId: string
   }
-
   useEffect(() => {
     if (
       [user, startDate, endDate, nights, roomId, hotelId].some((param) => {
