@@ -27,6 +27,7 @@ function HotelList() {
         <ul>
           {hotels?.map((hotel, idx) => (
             <Fragment key={hotel.id}>
+              
               <HotelItem
                 hotel={hotel}
                 isLike={Boolean(
@@ -41,6 +42,7 @@ function HotelList() {
                   style={{ margin: '20px 0' }}
                 />
               )}
+
             </Fragment>
           ))}
         </ul>

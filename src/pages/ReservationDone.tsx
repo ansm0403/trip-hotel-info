@@ -43,5 +43,4 @@ function ReservationDonePage() {
     </div>
   )
 }
-
 export default ReservationDonePage
