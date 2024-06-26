@@ -61,7 +61,6 @@ function ReservationPage() {
 
     navigate(`/reservation/done?hotelName=${hotel.name}`)
   }
-
   const buttonLabel = `${nights}박 ${addDelimiter(
     room.price * Number(nights),
   )}원 예약하기`

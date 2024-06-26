@@ -25,7 +25,6 @@ function HotelPage() {
   const { name, comment, images, contents, location, recommendHotels } = data
 
   return (
-
     <div>
       <SEO title={name} description={comment} image={images[0]} />
       <ScrollProgressBar style={scrollProgressBarStyles} />
@@ -38,7 +37,6 @@ function HotelPage() {
       <RecommendHotels recommendHotels={recommendHotels} />
       <Review hotelId={id} />
     </div>
-    
   )
 }
 

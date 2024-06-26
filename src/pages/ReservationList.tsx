@@ -1,7 +1,7 @@
 import ListRow from '@shared/ListRow'
 import useReservations from '@components/reservation-list/hooks/useReservations'
 
-function ReservationListPage() {
+export default  function ReservationListPage() {
   const { data, isLoading } = useReservations()
 
   console.log('data', data)
@@ -33,5 +33,3 @@ function ReservationListPage() {
     </div>
   )
 }
-
-export default ReservationListPage

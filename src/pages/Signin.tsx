@@ -4,7 +4,7 @@ import Button from '@shared/Button'
 
 import useGoogleSignin from '@hooks/useGoogleSignin'
 
-function SigninPage() {
+export default function SigninPage() {
   const { signin } = useGoogleSignin()
 
   return (
@@ -34,4 +34,3 @@ function SigninPage() {
     </Flex>
   )
 }
-export default SigninPage

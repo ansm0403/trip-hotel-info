@@ -2,7 +2,7 @@ import HotelListAddButton from '@components/test/HotelListAddButton'
 import RecommendHotelButton from '@components/test/RecommendHotelButton'
 import HotelFormAddButton from '@components/test/HotelFormAddButton'
 
-function Test() {
+export default  function Test() {
   return (
     <div>
       <HotelListAddButton />
@@ -11,5 +11,3 @@ function Test() {
     </div>
   )
 }
-
-export default Test
