@@ -1,8 +1,8 @@
 import qs from 'qs'
-import { useEffect, useState } from 'react'
+import { ComponentType, ReactNode, Suspense, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import FixedBottomButton from '@shared/FixedBottomButton'
+// import FixedBottomButton from '@shared/FixedBottomButton'
 
 import RangePicker from '@shared/RangePicker'
 
@@ -65,13 +65,27 @@ function SchedulePage() {
           })
         }}
       />
-      <FixedBottomButton
+      {/* <FixedBottomButton
         label={buttonLabel}
         disabled={제출가능한가 === false}
         onClick={moveToReservationPage}
-      />
+      /> */}
     </div>
   )
 }
 
 export default SchedulePage  
+
+
+function withSeuspencs<Props = Record<string, never>>(
+  WrappedComponent : ComponentType<Props>,
+  options : {fallback : ReactNode},
+){
+  return (props : Props)=>{
+    return (
+      <Suspense fallback = {options.fallback}>
+        <WrappedComponent {...(props as any)} />
+      </Suspense>
+    )
+  }
+}

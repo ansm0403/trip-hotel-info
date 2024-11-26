@@ -7,25 +7,25 @@ import styled from '@emotion/styled'
 import Flex from '@shared/Flex'
 import Text from '@shared/Text'
 import ListRow from '@shared/ListRow'
-import Tag from '@shared/Tag'
-import Spacing from '@shared/Spacing'
-import Button from '@shared/Button'
-import addDelimiter from '@utils/addDelimiter'
+// import Tag from '@shared/Tag'
+// import Spacing from '@shared/Spacing'
+// import Button from '@shared/Button'
+// import addDelimiter from '@utils/addDelimiter'
 
-import useUser from '@hooks/auth/useUser'
-import { useAlertContext } from '@contexts/AlertContext'
-import useRooms from './hooks/useRooms'
-import withSusepnse from '@shared/hocs/withSuspense'
+// import useUser from '@hooks/auth/useUser'
+// import { useAlertContext } from '@contexts/AlertContext'
+// import useRooms from './hooks/useRooms'
+// import withSusepnse from '@shared/hocs/withSuspense'
 
-function Rooms({ hotelId }: { hotelId: string }) {
-  const { data } = useRooms({ hotelId })
-  const user = useUser()
-  const { open } = useAlertContext()
-  const navigate = useNavigate()
+export default function Rooms({ hotelId }: { hotelId: string }) {
+  // const { data } = useRooms({ hotelId })
+  // const user = useUser()
+  // const { open } = useAlertContext()
+  // const navigate = useNavigate()
 
   return (
     <Container>
-      <Header justify="space-between" align="center">
+      {/* <Header justify="space-between" align="center">
         <Text bold={true} typography="t4">
           객실정보
         </Text>
@@ -99,8 +99,8 @@ function Rooms({ hotelId }: { hotelId: string }) {
               }
             />
           )
-        })}
-      </ul>
+        })} */}
+      {/* </ul> */}
     </Container>
   )
 }
@@ -121,4 +121,4 @@ const imageStyles = css`
   border-radius: 4px;
 `
 
-export default withSusepnse(Rooms, { fallback: <div>룸 불러오는중...</div> })
+// export default withSusepnse(Rooms, { fallback: <div>룸 불러오는중...</div> })

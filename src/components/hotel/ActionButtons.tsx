@@ -5,21 +5,21 @@ import Flex from '@shared/Flex'
 import Spacing from '@shared/Spacing'
 import Text from '@shared/Text'
 
-import useShare from '@hooks/useShare'
-import { Hotel } from '@models/hotel'
-import useLike from '@hooks/like/useLike'
+// import useShare from '@hooks/useShare'
+// import { Hotel } from '@models/hotel'
+// import useLike from '@hooks/like/useLike'
 
-function ActionButtons({ hotel }: { hotel: Hotel }) {
-  const share = useShare()
-  const { data: likes, mutate: like } = useLike()
+function ActionButtons() {
+  // const share = useShare()
+  // const { data: likes, mutate: like } = useLike()
 
-  const { name, comment, mainImageUrl, id } = hotel
+  // const { name, comment, mainImageUrl, id } = hotel
 
-  const isLike = Boolean(likes?.find((like) => like.hotelId === hotel.id))
+  // const isLike = Boolean(likes?.find((like) => like.hotelId === hotel.id))
 
   return (
     <Flex css={containerStyles}>
-      <Button
+      {/* <Button
         label="찜하기"
         onClick={() => {
           like({
@@ -58,7 +58,7 @@ function ActionButtons({ hotel }: { hotel: Hotel }) {
           label="링크복사"
           iconUrl="https://cdn4.iconfinder.com/data/icons/basic-user-interface-elements/700/paste-clipboard-copy-512.png"
         />
-      </CopyToClipboard>
+      </CopyToClipboard> */}
     </Flex>
   )
 }

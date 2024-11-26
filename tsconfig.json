@@ -24,6 +24,10 @@
   },
   "include": [
     "src",
-    "./tscofing.paths.json"
+    "./tscofing.paths.json",
+    "jest.setup.js"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }

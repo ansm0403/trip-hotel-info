@@ -1,21 +1,21 @@
 import InfiniteScroll from 'react-infinite-scroll-component'
 
-import useHotels from '@components/hotelList/hooks/useHotels'
+// import useHotels from '@components/hotelList/hooks/useHotels'
 
-import Top from '@shared/Top'
-import HotelItem from '@/components/hotelList/HotelItem'
-import { Fragment } from 'react'
-import Spacing from '@shared/Spacing'
-import useLike from '@hooks/like/useLike'
-import withSusepnse from '@shared/hocs/withSuspense'
+// import Top from '@shared/Top'
+// import HotelItem from '@/components/hotelList/HotelItem'
+// import { Fragment } from 'react'
+// import Spacing from '@shared/Spacing'
+// import useLike from '@hooks/like/useLike'
+// import withSusepnse from '@shared/hocs/withSuspense'
 
-function HotelList() {
-  const { data: hotels, hasNextPage, loadMore } = useHotels()
-  const { data: likes, mutate: like } = useLike()
+export default function HotelListPage() {
+  // const { data: hotels, hasNextPage, loadMore } = useHotels()
+  // const { data: likes, mutate: like } = useLike()
 
   return (
     <div>
-      <Top title="인기 호텔" subTitle="호텔부터 펜션까지 최저가" />
+      {/* <Top title="인기 호텔" subTitle="호텔부터 펜션까지 최저가" />
 
       <InfiniteScroll
         dataLength={hotels?.length ?? 0}
@@ -46,11 +46,11 @@ function HotelList() {
             </Fragment>
           ))}
         </ul>
-      </InfiniteScroll>
+      </InfiniteScroll> */}
     </div>
   )
 }
 //reser
-export default withSusepnse(HotelList, {
-  fallback: <div>호텔리스트불러오는중 ....</div>,
-})
+// export default withSusepnse(HotelList, {
+//   fallback: <div>호텔리스트불러오는중 ....</div>,
+// })
